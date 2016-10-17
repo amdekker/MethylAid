@@ -1,0 +1,64 @@
+Package: MethylAid
+Type: Package
+Title: Visual and interactive quality control of large Illumina DNA
+       Methylation array data sets
+Version: 1.8.0
+Date: 2016-04-18
+Authors@R: c(person("Maarten", "van Iterson",
+        email="mviterson@gmail.com", role="cre"),
+	person("Elmar", "Tobi", role="ctb"),
+	person("Roderick", "Slieker", role="ctb"),
+	person("Wouter", "den Hollander", role="ctb"),
+	person("Rene", "Luijk", role="ctb"),
+	person("Bas", "Heijmans", role="ctb"))
+Author: Maarten van Iterson [aut, cre], Elmar Tobi[ctb],
+        Roderick Slieker[ctb], Wouter den Hollander[ctb],
+	Rene Luijk[ctb] and Bas Heijmans[ctb]
+Maintainer: M. van Iterson <mviterson@gmail.com>
+Description: A visual and interactive web application using RStudio's
+    shiny package. Bad quality samples are detected using
+    sample-dependent and sample-independent controls present on the
+    array and user adjustable thresholds. In depth exploration of
+    bad quality samples can be performed using several interactive
+    diagnostic plots of the quality control probes present on the
+    array. Furthermore, the impact of any batch effect provided by
+    the user can be explored.
+URL: http://shiny.bioexp.nl/MethylAid
+License: GPL (>= 2)
+VignetteBuilder: knitr
+biocViews: DNAMethylation,
+    MethylationArray,
+    Microarray,
+    TwoChannel,
+    QualityControl,
+    BatchEffect,
+    Visualization,
+    GUI
+Depends:
+    R (>= 3.0)
+Imports:
+    Biobase,
+    BiocParallel,
+    BiocGenerics,
+    ggplot2,
+    grid,
+    gridBase,
+    grDevices,
+    graphics,
+    hexbin,
+    matrixStats,
+    minfi (>= 1.17.9),
+    methods,
+    RColorBrewer,
+    shiny,
+    stats,
+    utils
+Suggests:
+    BiocStyle,
+    knitr,
+    MethylAidData,
+    minfiData,
+    RUnit
+RoxygenNote: 5.0.1
+URL: https://github.com/mvaniterson/methylaid
+BugReports: https://github.com/mvaniterson/methylaid/issues
